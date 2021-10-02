@@ -16,6 +16,12 @@ class Dog {
     div.appendChild(ele)
   }
 
+  static createDog(e){
+    e.preventDefault()
+    let name = e.target.children[1].value
+    new Dog(name)
+  }
+
   bark(){
     console.log(`${this.name} says Woof!`)
   }
