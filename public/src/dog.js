@@ -1,4 +1,5 @@
 class Dog {
+  //temporary storage for all dogs
   static allDogs = []
 
   constructor(name){
